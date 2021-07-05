@@ -10,7 +10,8 @@ library(stringi)
 in_dir <- "/pfs/shapes_sp/shapes"
 out_dir <- "/pfs/out"
 
-segmentos <- st_read(paste0(in_dir, "/Segmento Censal_CR.shp"), options = "ENCODING=latin1") %>%
+segmentos <- st_read(paste0(in_dir, "/Segmento Censal_CR.shp"),
+                     options = "ENCODING=latin1") %>%
   st_transform(crs = "+init=epsg:4326") # pone el mismo sistema de coordenadas (WGS84)
 
 # Crea carpeta para guardar los feathers
@@ -31,7 +32,8 @@ segmentos %>%
       str_replace_all(" ", "_") %>%
       unique()
 
-    write_rds(canton_shape, file = paste0(segmentos_out,"/segmentos_", canton, ".rds"))
+    write_rds(canton_shape, file = paste0(segmentos_out,"/segmentos_",
+                                          canton, ".rds"))
   })
 
 playas_out <- paste0(segmentos_out, "/playas")
@@ -39,8 +41,10 @@ playas_out <- paste0(segmentos_out, "/playas")
 if(!dir.exists(playas_out)) {
   dir.create(playas_out)
 
-  playas <- st_read(paste0(in_dir, "/playas2014crtm05.shp"), options = "ENCODING=latin1") %>%
-    st_transform(crs = "+init=epsg:4326")  # pone el mismo sistema de coordenadas (WGS84)
+  playas <- st_read(paste0(in_dir, "/playas2014crtm05.shp"),
+                    options = "ENCODING=latin1") %>%
+    st_transform(crs = "+init=epsg:4326") %>%  # pone el mismo sistema de coordenadas (WGS84)
+    select(-X_COORD, -Y_COORD)
 
   # guarda playas como rds
   write_rds(playas, file = paste0(playas_out, "/playas.rds"))

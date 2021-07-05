@@ -5,7 +5,8 @@ library(leaflet)
 playas <- st_read("datos/playas2014crtm05.shp",
                   options = "ENCODING=latin1") %>%
   # pon el mismo sistema de coordenadas (WGS84)
-  st_transform(crs = "+init=epsg:4326")
+  st_transform(crs = "+init=epsg:4326") %>%
+  select(-X_COORD, -Y_COORD)
 
 segmentos <- st_read("datos/Segmento Censal_CR.shp",
                      options = "ENCODING=latin1") %>%
