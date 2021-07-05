@@ -23,7 +23,7 @@ Los datos de los segmentos censales se deben solicitar al Instituto Nacional de 
 gcloud auth activate-service-account --key-file=gcs_demos_ixpantia_key.json
 ```
 
-3. Hacemos el built del Dockerfile con:
+3. Hacemos el built del Dockerfile en la carpeta raiz de este repositorio con:
 
 ```
 docker build -t gcr.io/demos-ixpantia/espacial .
