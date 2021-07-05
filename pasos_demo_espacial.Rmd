@@ -106,5 +106,3 @@ pachctl create pipeline -f pipeline_une.json
 ```
 pachctl get file une_segmentos@master:/segmentos_playas.rds -o <path_al_que_queremos_copiar_archivo/segmentos_playas.rds>
 ```
-
-13. **IMPORTANTE:** Debemos quitar el acceso y permisos del service account de Pachyderm que pusimos en el bucket `demo_espacial` en GCP, donde tragimos los datos inciales para el repositorio de entrada `shapes_sp`.
