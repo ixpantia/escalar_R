@@ -44,5 +44,16 @@ En RStudio busca la opción en el menú Help >About RStudio. Busca si tienes Ver
 
 https://www.rstudio.com/products/rstudio/download/#download
 
+### **Que tienes pachyderm instalado:**
+
+Para la instalación de pachyderm, en sistemas operativos macOS y Linux, 
+puedes seguir las siguientes instrucciones:
+
+https://www.pachyderm.com/getting-started/
+
+## Preguntas
+
+Si tenés alguna pregunta, podés enviarnos un correo a hola@ixpantia.com para
+ayudarte.
 
 

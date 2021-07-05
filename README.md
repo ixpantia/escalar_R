@@ -43,3 +43,15 @@ ya sea con Help &gt; Check for Updates o visitando las páginas de
 RStudio para bajar una nueva versión compatible con tu sistema:
 
 <https://www.rstudio.com/products/rstudio/download/#download>
+
+### **Que tienes pachyderm instalado:**
+
+Para la instalación de pachyderm, en sistemas operativos macOS y Linux,
+puedes seguir las siguientes instrucciones:
+
+<https://www.pachyderm.com/getting-started/>
+
+## Preguntas
+
+Si tenés alguna pregunta, podés enviarnos un correo a
+<hola@ixpantia.com> para ayudarte.
