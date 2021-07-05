@@ -17,7 +17,8 @@ segmento <- list.files(path = in_dir,
                          pattern = ".rds",
                          full.names = TRUE,
                          recursive = FALSE) %>%
-  readRDS()
+  readRDS() %>%
+  st_make_valid()
 
 
 segmento_playas <- segmento %>%

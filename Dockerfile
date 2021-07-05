@@ -23,9 +23,9 @@ RUN R -e "install.packages('lwgeom')"
 
 
 # Copia todo al directorio de inicio del contenedor
-COPY distancias.R  distancias.R
-COPY separa_shape.R  separa_shape.R
 COPY unir_segmentos_playas.R unir_segmentos_playas.R
+COPY separa_shape.R  separa_shape.R
+COPY distancias.R  distancias.R
 
 # Abre puerto 80 para traffic
 EXPOSE 80
