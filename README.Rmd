@@ -51,6 +51,14 @@ puedes seguir las siguientes instrucciones:
 
 https://www.pachyderm.com/getting-started/
 
+
+### **Que tienes docker instalado:**
+
+Las instrucciones para instalar Docker en diferentes sistemas operativos, 
+puedes seguir las siguientes instrucciones:
+
+https://docs.docker.com/engine/install/
+
 ## Preguntas
 
 Si tenés alguna pregunta, podés enviarnos un correo a hola@ixpantia.com para
