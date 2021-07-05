@@ -6,8 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Este repositorio contiene el material para el taller Data Pipelines at
-scale with R and Kubernetes a impartir durante la conferencia [UseR!
+¡Hola! Te damos la bienvenida al taller Data Pipelines at scale with R
+and Kubernetes. Aquí encontrarás todos los materiales que usaremos
+durante el taller en la conferencia [UseR!
 2021](https://user2021.r-project.org/)
 
 ## Preparación
@@ -43,3 +44,22 @@ ya sea con Help &gt; Check for Updates o visitando las páginas de
 RStudio para bajar una nueva versión compatible con tu sistema:
 
 <https://www.rstudio.com/products/rstudio/download/#download>
+
+### **Que tienes pachyderm instalado:**
+
+Para la instalación de pachyderm, en sistemas operativos macOS y Linux,
+puedes seguir las siguientes instrucciones:
+
+<https://www.pachyderm.com/getting-started/>
+
+### **Que tienes docker instalado:**
+
+Las instrucciones para instalar Docker en diferentes sistemas
+operativos, puedes seguir las siguientes instrucciones:
+
+<https://docs.docker.com/engine/install/>
+
+## Preguntas
+
+Si tenés alguna pregunta, podés enviarnos un correo a
+<hola@ixpantia.com> para ayudarte.
