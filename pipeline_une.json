@@ -1,0 +1,21 @@
+{
+  "pipeline": {
+    "name": "une_segmentos"
+  },
+  "description": "Toma los shapes de segmentos con las playas asociadas y los une en uno solo",
+  "input": {
+    "pfs": {
+      "repo": "distancias",
+      "glob": "/"
+    }
+  },
+  "transform": {
+    "image": "gcr.io/demos-ixpantia/espacial",
+    "cmd": [ "Rscript", "unir_segmentos_playas.R"],
+    "err_cmd": [ "true" ]
+  },
+  "enable_stats": true,
+  "parallelism_spec": {
+    "constant": 4
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "pipeline": {
+    "name": "separa_shape"
+  },
+  "description": "Toma shape files de segmentos y los separa en pequeños archivos de cantones.",
+  "input": {
+    "pfs": {
+      "repo": "shapes_sp",
+      "glob": "/*/"
+    }
+  },
+  "transform": {
+    "image": "gcr.io/demos-ixpantia/espacial",
+    "cmd": [ "Rscript", "separa_shape.R"],
+    "err_cmd": [ "true" ]
+  },
+  "enable_stats": true,
+  "parallelism_spec": {
+    "constant": 4
+  }
+}
