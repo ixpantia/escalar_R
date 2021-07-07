@@ -1,14 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Data Pipelines at scale with R and Kubernetes
+# Dataductos a escala con R y Kubernetes <a href="https://user2021.r-project.org//"><img src="https://user2021.r-project.org/img/artwork/marmot.png" align="right" width="20%"></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-¡Hola! Te damos la bienvenida al taller Data Pipelines at scale with R
-and Kubernetes. Aquí encontrarás todos los materiales que usaremos
-durante el taller en la conferencia [UseR!
+¡Hola! Te damos la bienvenida al taller Dataductos a escala con R y
+Kubernetes. Aquí encontrarás todos los materiales que usaremos durante
+el taller en la conferencia [UseR!
 2021](https://user2021.r-project.org/)
 
 ## Preparación
