@@ -137,10 +137,21 @@ leaflet() %>%
 
 resultado <- readRDS("datos/segmentos_playas.rds")
 
+# Hay un poligono vacío
+poligonos_vacios <- which(st_is_empty(resultado$geometry.x) == TRUE)
+
+# Removemos el poligono
+resultado <- resultado[-poligonos_vacios,]
+
+# Convertimos a multipolygon
+resultado <- st_cast(resultado, to = "MULTIPOLYGON")
+
+# Definimos paleta de color
 paleta <- colorNumeric(
   palette = colorRampPalette(c('#70FB01', '#760506'))(length(resultado$distancia_m)),
   domain = resultado$distancia_m)
 
+# Graficamos resultado
 leaflet() %>%
   addTiles() %>%
   setView(lat = 10, lng = -84, zoom = 7) %>%
